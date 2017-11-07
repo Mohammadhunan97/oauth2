@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+	<a href="/auth/google" style="background:#e74c3c; color: white; padding:5px;"> Sign in with Google</a>
+
+	<br/><br/><br/>
+
+	<a href="/auth/facebook" style="background:#3498db; color: white; padding:5px;"> Sign in with Facebook</a>
+
+	<br/> <h1> Sign Up:</h1>
+	<form action="/user/new" method="post">
+		<input name="username" placeholder="username"/>
+		<br />
+		<input name="password" placeholder="password" />
+		<br />
+		<input name="age" placeholder="age" />
+		<br />
+		<input type="submit" />
+	</form>
+	<br/>
+	<h1> Login: </h1>
+	<form action="/login" method="post">
+		<input name="username" placeholder="username"/>
+		<br />
+		<input name="password" placeholder="password" />
+		<br />
+		<input type="submit" />
+	</form>
+</body>
+</html>

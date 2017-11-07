@@ -13,7 +13,15 @@ let UserSchema = new Schema({
 	},
 	googleid: {
 		type: Number,
-		required: false //only needed for google Users
+		required: false //only needed for google users
+	},
+	facebookid: {
+		type: Number,
+		required: false //only needed for facebook users
+	},
+	password: {
+		type: String,
+		required: false //only required for local users
 	}
 })
 
